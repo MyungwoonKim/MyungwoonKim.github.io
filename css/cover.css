@@ -37,16 +37,16 @@ a:hover {
   margin-bottom: 1em;
   color: #333;
   text-shadow: none;
-  font-family: NanumMyeongjo-r;
-  font-size: 1.5em;
+  font-family: NanumMyeongjo-b;
+  font-size: 1.7rem;
 }
 
 .top-title-sub{
   margin-top: 1em;
   color: #333;
   text-shadow: none;
-  font-family: NanumMyeongjo-r;
-  font-size: 1em;
+  font-family: NanumMyeongjo-b;
+  font-size: 1.2rem;
 }
 
 
@@ -57,6 +57,40 @@ a:hover {
 html,
 body {
   height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 10px;
+  }
 }
 
 body {
@@ -127,6 +161,71 @@ header {
     float: right;
   }
 }
+
+
+/*
+ * section
+ */
+.section1-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+  font-size: 1rem;
+}
+
+.section1-main {
+  background-color: #fefefe;
+  font-family: NanumMyeongjo-r;
+  line-height: 2em;
+  font-size: 1.2rem;
+}
+
+.section1-sub {
+  font-family: NanumMyeongjo-b;
+  line-height: 2.1em;
+  font-size: 1.35rem;
+}
+
+.section1-sub2 {
+  font-family: NanumMyeongjo-b;
+  line-height: 2.1em;
+  font-size: 1.35rem;
+}
+
+.section2-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section2-main {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  position: relative;
+}
+
+
+.section2-main::after {
+  width:100%;
+  height:100%;
+  content: "";
+  background-image: url("../img/section2.jpg");
+  background-size: cover;
+  background-position: right;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section2-sub {
+  font-family: NanumMyeongjo-b;
+  line-height: 2em;
+  font-size: 1.2rem;
+}
+
 
 
 /*
