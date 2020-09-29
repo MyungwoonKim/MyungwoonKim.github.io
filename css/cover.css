@@ -192,6 +192,10 @@ header {
   font-size: 1.35rem;
 }
 
+.section1-sub2 .small {
+  font-size: 1.2rem;
+}
+
 .section2-title {
   margin-top: 1em;
   color: #333;
