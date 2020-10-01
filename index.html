@@ -27,49 +27,370 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        var wow = new WOW(
+            {
+                boxClass:     'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       130,          // distance to the element when triggering the animation (default is 0)
+                mobile:       true,       // trigger animations on mobile devices (default is true)
+                live:         true,       // act on asynchronously loaded content (default is true)
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+            }
+        );
+        wow.init();
+
+        $(document).ready(function() {
+            let date = new Date(2020, 10, 28);
+            let currentDate = new Date();
+
+            let result = date - currentDate;
+            let misec = 24 * 60 * 60 * 1000;
+
+            result = (result <= 0)? 0 : (parseInt(result / misec) - 1);
+
+            $("#d-day").html(result);
+        });
+    </script>
 </head>
 <body class="text-center">
 <div class="top-div">
     <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <h1 class="cover-heading">
+        <h1 class="wow fadeInDown cover-heading">
             11.28
         </h1>
     </header>
-    <main role="main" class="inner cover">
-        <p class="top-title">김명운 / 이재은</p>
-        <p class="top-title-sub">토요일 오전 11시</p>
-        <p class="top-title-sub">더채플엣웨스트 7층 단독홀</p>
-        <br/><br/><br/>
-        <hr class="cover-container"/>
-        <br/>
-        <p class="section1-title section1-main">
-            예쁜 예감이 들었다 <br/>
-            우리는 언제나 손을 잡고 있게 될 것이다.
-            <br/><br/>
-            - 이이체, 연인 -
-        </p>
-        <br/>
-        <p class="section1-title section1-sub">
-            사랑으로 물들어가는 계절,<br/>
-            연인에서 부부라는 이름으로<br/>
-            평생을 함께 하고자 합니다.<br/>
-            귀한 걸음 하시어<br/>
-            두 사람의 언약을 지켜봐 주시면<br/>
-            더 없는 기쁨으로 간직하겠습니다.
-        </p>
-        <br/>
-        <div class="section1-title section1-sub2">
-            김재화 · 고복순<span class="small">의&nbsp아들&nbsp&nbsp</span>김명운<br/>
-            이신형 · 한정연<span class="small">의&nbsp&nbsp&nbsp딸&nbsp&nbsp&nbsp</span>이재은
+    <main role="main" class="inner">
+        <div class="wow fadeInUp">
+            <p class="top-title">김명운 / 이재은</p>
+            <p class="top-title-sub">토요일 오전 11시</p>
+            <p class="top-title-sub">더채플엣웨스트 7층 단독홀</p>
+            <br/><br/><br/>
+            <hr class="cover-container"/>
+            <br/>
         </div>
-        <br/><br/><br/>
+        <div class="wow fadeInUp">
+            <p class="section1-title section1-main">
+                예쁜 예감이 들었다 <br/>
+                우리는 언제나 손을 잡고 있게 될 것이다.
+                <br/><br/>
+                - 이이체, 연인 -
+            </p>
+            <br/>
+        </div>
+        <div class="wow fadeInUp">
+            <p class="section1-title section1-sub">
+                사랑으로 물들어가는 계절,<br/>
+                연인에서 부부라는 이름으로<br/>
+                평생을 함께 하고자 합니다.<br/>
+                귀한 걸음 하시어<br/>
+                두 사람의 언약을 지켜봐 주시면<br/>
+                더 없는 기쁨으로 간직하겠습니다.
+            </p>
+            <br/>
+        </div>
+        <div class="wow fadeInUp">
+            <div class="section1-title section1-sub2">
+                김재화 · 고복순<span class="small">의&nbsp아들&nbsp&nbsp</span>김명운<br/>
+                이신형 · 한정연<span class="small">의&nbsp&nbsp&nbsp딸&nbsp&nbsp&nbsp</span>이재은
+            </div>
+            <br/><br/><br/><br/><br/>
+        </div>
+        <div class="wow fadeInUp section3 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <p class="wow fadeInUp section3-title section3-main">Gallery</p>
+            <div id="carouselExampleControls" class="wow fadeInUp carousel slide section3-image" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/test/1.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/3.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/4.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/5.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/6.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/7.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/8.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/9.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/10.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/11.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/test/12.jpg" class="d-block w-100">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <br/><br/><br/>
+        </div>
+        <div class="wow fadeInUp">
+            <br/><br/>
+            <div class="container section4-title">
+                <div class="row">
+                    <div class="col-6 section4-sec1-2">
+                        <span class="section4-sec1">신랑</span>
+                        &nbsp&nbsp&nbsp
+                        <span class="section4-sec2">김명운</span>
+                    </div>
+                    <div class="col">
+                        <button onclick="document.location.href='tel:010-5518-5773'" class="section4-sec3">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                            </svg>
+                        </button>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp
+                        <button onclick="document.location.href='sms:010-5518-5773'" class="section4-sec3">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                    <div class="col-6 section4-sec1-2">
+                        <span class="section4-sec1">신부</span>
+                        &nbsp&nbsp&nbsp
+                        <span class="section4-sec2">이재은</span>
+                    </div>
+                    <div class="col">
+                        <button onclick="document.location.href='tel:010-7187-0721'" class="section4-sec3-g">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                            </svg>
+                        </button>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp
+                        <button onclick="document.location.href='sms:010-7187-0721'" class="section4-sec3-g">
+                            <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <br/>
+                <div class="row" style="margin-top:1rem; margin-bottom: 1rem">
+                    <div class="col-6 section4-sec1-2">
+                        <span class="section4-sec1">신랑측 혼주</span>
+                    </div>
+                    <div class="col section4-sec1-2">
+                        <span class="section4-sec1">신부측 혼주</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 section4-sec1-2">
+                        <span class="section4-sec1">아버지</span>
+                        &nbsp&nbsp&nbsp
+                        <span class="section4-sec2">김재화</span>
+                        <br/>
+                        <span class="section4-sec1">어머니</span>
+                        &nbsp&nbsp&nbsp
+                        <span class="section4-sec2">고복순</span>
+                    </div>
+                    <div class="col section4-sec1-2">
+                        <span class="section4-sec1">아버지</span>
+                        &nbsp&nbsp&nbsp
+                        <span class="section4-sec2">이신형</span>
+                        <br/>
+                        <span class="section4-sec1">어머니</span>
+                        &nbsp&nbsp&nbsp
+                        <span class="section4-sec2">한정연</span>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+        </div>
+        <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <br/>
+            <p class="section5-title section5-main">Date</p>
+            <p class="section5-title section5-sub">11월 28일 · 토요일 · 오전 11:00</p>
+            <table class="wow fadeInUp section5-title section5-table">
+                <tr>
+                    <td class="sun">S</td>
+                    <td>M</td>
+                    <td>T</td>
+                    <td>W</td>
+                    <td>T</td>
+                    <td>F</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td class="sun">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td class="sun">8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td class="sun">15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td class="sun">22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td class="check">28</td>
+                </tr>
+                <tr>
+                    <td class="sun">29</td>
+                    <td>30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p class="wow fadeInUp section5-title section5-sub">명운 ❤️ 재은 결혼식이 <span id="d-day"></span>일 남았습니다.</p>
+            <br/><br/>
+        </div>
+        <div class="wow fadeInUp inner cover-container d-flex w-100 h-100 mx-auto flex-column">
+            <br/><br/>
+            <p class="wow fadeInUp section6-title section6-main">Location</p>
+            <div class="wow fadeInUp  section6-title">
+                <p class="section6-location-main" style="margin-bottom: 0;">더채플엣웨스트 7층 단독홀</p>
+                <p class="section6-location-sub" style="text-align: center;">
+                    서울특별시 강서구 양천로 476
+                </p>
+            </div>
+            <br/>
+            <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
+
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=122a613fc96fa3ab9169935d07c14e3f"></script>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                    mapOption = {
+                        center: new kakao.maps.LatLng(37.56170714301528, 126.85306609567687), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
+
+                var map = new kakao.maps.Map(mapContainer, mapOption);
+                var markerPosition  = new kakao.maps.LatLng(37.56170714301528, 126.85306609567687);
+
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+            </script>
+            <div class="wow fadeInUp section6-location p-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="section6-location section6-location-main btn btn-link btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    지하철 이용시
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body section6-location-sub">
+                                지하철 9호선 가양역 9번 출구로 나와 직진 10m도보 후 좌측건물 7층 단독홀
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="section6-location section6-location-main btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    버스 이용시
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body section6-location-sub">
+                                간선 : 652, 672 <br/>
+                                지선 : 6632 <br/>
+                                공항 : 6018 <br/>
+                                광역 : 770
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="section6-location section6-location-main btn btn-link btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    자가용 이용시
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body section6-location-sub">
+                                올림픽 대로 방면 <br/>
+                                올림픽 대로 > 강서구청 방면 진입 > 가양사거리 우회전 후 150m 전방 위치 <br/>
+                                (건너편 위치 : 150m앞 유턴 후 주차장 진입) <br/>
+                                <br/>
+                                강변북로 방면 <br/>
+                                강변북로 > 가양대로 진입 > 가양역사거리 50m 앞 가양역 8번출구 앞에서 우회전 >
+                                화곡로 69길 500m 사거리 우회전 > 50m앞 가양 3,5단지 사거리 우회전 > 150m 앞 주차장 진입 <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+        </div>
+
         <hr class="cover-container"/>
         <br/>
-        <p class="section2-title section2-main inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
+        <p class="wow fadeInUp section2-title section2-main inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
             축하해 주시는<br/>
             모든 분들에게
         </p>
-        <p class="section2-title section2-sub inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
+        <p class="wow fadeInUp section2-title section2-sub inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
             안녕하세요.<br/>
             <br/>
             결혼식을 진행하는 저희 마음과 같이<br/>
@@ -90,11 +411,6 @@
             신랑 김명운 신부 이재은 올림
         </p>
     </main>
-    <footer class="mastfoot mt-auto">
-        <div class="inner">
-            <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-    </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

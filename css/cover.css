@@ -103,6 +103,11 @@ body {
   max-width: 42em;
 }
 
+.cover-container-2 {
+  max-width: 42em;
+  color: black;
+}
+
 
 /*
  * Header
@@ -230,7 +235,156 @@ header {
   font-size: 1.2rem;
 }
 
+.section3 {
+  background-color: #f9f9f9;
+}
 
+.section3-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section3-main {
+  font-family: NanumMyeongjo-e;
+  line-height: 1.5em;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.section3-image {
+  box-shadow : 2px 2px 5px #999;
+}
+
+.section4-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section4-sec1-2 {
+  padding-top: 0.1rem;
+}
+
+.section4-sec1 {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section4-sec2 {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+}
+
+.section4-sec3 {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  background: none;
+  border: none;
+  color: #55CCCC;
+}
+
+.section4-sec3-g {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  background: none;
+  border: none;
+  color: #FF99CC;
+}
+
+.section5 {
+  background-color: #f9f9f9;
+}
+
+.section5-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section5-main {
+  font-family: NanumMyeongjo-e;
+  line-height: 1.5em;
+  font-size: 1.4rem;
+}
+
+.section5-sub {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section5-table {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.section5-table tr td{
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
+.section5-table tr .sun{
+  color: red;
+}
+
+.section5-table tr .check{
+  color: white;
+  background-color: chocolate;
+  border-radius: 50px;
+}
+
+.section5-table tr:first-child td{
+  padding-top: 2.5em;
+}
+
+.section5-table tr:last-child td{
+  padding-bottom: 2.5em;
+}
+
+.section6-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section6-location {
+  color: #333;
+  text-shadow: none;
+}
+
+.section6-main {
+  font-family: NanumMyeongjo-e;
+  line-height: 1.5em;
+  font-size: 1.4rem;
+}
+
+.section6-location-main {
+  font-family: NanumMyeongjo-e;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section6-sub {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section6-location-sub {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+  text-align: left;
+}
 
 /*
  * Cover
