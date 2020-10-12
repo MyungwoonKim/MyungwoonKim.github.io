@@ -67,7 +67,7 @@ html {
   font-size: 16px;
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 430px) {
   html {
     font-size: 15px;
   }
@@ -87,13 +87,13 @@ html {
 
 @media screen and (max-width: 320px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 300px) {
   html {
-    font-size: 10px;
+    font-size: 11px;
   }
 }
 
