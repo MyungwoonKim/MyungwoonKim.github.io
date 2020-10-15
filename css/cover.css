@@ -390,6 +390,64 @@ header {
   text-align: left;
 }
 
+.section7 {
+  background-color: #f9f9f9;
+}
+
+.section7-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section7-modal {
+  color: #333;
+}
+
+.section7-modal-title {
+  font-size: 1.4rem;
+}
+
+.section7-modal-content {
+  font-size: 1.2rem;
+}
+
+.section7-main {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.4em;
+  font-size: 1.4rem;
+}
+
+.section7-button {
+  font-family: NanumMyeongjo-b;
+  font-size: 1.2rem;
+  background-color: #CC9999;
+  color: #fff;
+  border: 0;
+  border-radius: 50px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.7em;
+}
+
+.section7-button:hover {
+  background-color: #CC9999;
+  color: #fff;
+  border: 0;
+}
+
+.section7-button:active {
+  background-color: #996666;
+  color: #fff;
+  border: 0;
+}
+
+.section7-button:valid {
+  background-color: #CC9999;
+  color: #fff;
+  border: 0;
+}
+
 /*
  * Cover
  */
