@@ -391,7 +391,7 @@ header {
 }
 
 .section7 {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 .section7-title {
@@ -446,6 +446,10 @@ header {
   background-color: #CC9999;
   color: #fff;
   border: 0;
+}
+
+.section8 {
+  background-color: #f9f9f9;
 }
 
 /*
